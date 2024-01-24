@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #3498db; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-dropdown {
+    margin-left: auto;
+}
+
+.chat-body {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.user-message {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+} 
+
+/* .bot-message {
+    background-color: #e8ecef; 
+    color: rgba(6, 1, 1, 0.82);
+} */
+.bot-message {
+    
+    color: rgba(6, 1, 1, 0.82);
+}
+ .bot-message {    
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.chat-input {
+    display: flex;
+    padding: 15px;
+}
+
+#user-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#send-btn, #refresh-btn {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#refresh-btn {
+    margin-left: auto;
+}
+
+#send-btn:hover, #refresh-btn:hover {
+    color: #3498db; 
+}
+
+.dropdown-menu {
+    background-color: #f9f9f9;
+}
+
+.dropdown-item:hover {
+    background-color: #3498db; 
+    color: white;
+}
+/* ... (other CSS code) ... */
+
+.loading-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #3498db; /* Adjust the color based on your design */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ... (other CSS code) ... */
